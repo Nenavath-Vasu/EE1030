@@ -1,0 +1,236 @@
+% \iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{LIMITS,CONTINUITY}
+\author{EE24BTECH11046 - NENAVATH VASU $^{*}$% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{flushleft}
+\fontsize{18}{20}\selectfont
+\textbf{C: MCQs with One Correct Answer}
+\end{flushleft}
+
+
+\begin{enumerate}[start=2]
+   
+\item For a real number y, let [y] denote the greatest integer less thsn or equal to y.Then the function{$f(x)=\frac{\tan\pi[x-\pi]}{1+[x]^2}$} is
+
+\hfill                    (1981 - 2 Marks)
+   \begin{enumerate}[label=(\alph*)] 
+       \item discontinuous at some x
+        \item continuous at all x, but the derivative$f'(x)$ does not exist for some x
+        \item $f'(x)$ exists for all x, but the second derivative $f"(x)$ does not exist for some x
+        \item $f'(x)$ exists for all x
+   \end{enumerate}
+
+
+
+
+\item There exists a function $f(x)$,satisfying f(0)=1,f'(0)=-1,f(x)>0 for all x, and 
+
+\hfill      (1982 - 2 Marks)
+    \begin{enumerate}[label=(\alph*)]
+
+          \item f'(x) $>$ 0 for all x
+          \item -1 $<$ f"(x) $<$ 0 for all x
+          \item -2 $\leq$ f"(x) $\leq$ -1 for  all 
+          \item f"(x) $<$ -2 for all x
+
+          
+          
+           
+    \end{enumerate}
+
+\item If G(x)=-$\sqrt{25-x^2}$ then $\lim_{x \to 1}\frac{G(x)-G(1)}{x-1}$ has the value
+\hfill    (1983 - 1 Mark)
+\begin{enumerate}
+    \item $\frac{1}{24}$
+    \item $\frac{1}{5}$
+    \item -$\sqrt{24}$
+    \item none of these
+    
+\end{enumerate}
+
+\item If f(a)=2,f'(a)=1,g(a)=-1,g'(a)2, then the value of $\lim_{x\to a}\frac{g(x)f(a)-g(a)f(x)}{x-a}$ is
+
+  \hfill (1983 - 1 Mark)
+     \begin{enumerate}
+         \item -5
+         \item $\frac{1}{5}$
+         \item 5
+         \item none of these
+     \end{enumerate}
+
+\item The function f(x)=$\frac{\ln{(1+ax)}-\ln{(1-bx)}}{x}$ is not defined at x=0.The value which should be assigned to $f$ at x=0 so that it is continuous at x=0, is
+
+  \hfill              (1983 - 1 Mark)
+    \begin{enumerate}
+        \item a-b
+        \item a+b
+        \item $\ln{a}-\ln{b}$
+        \item none of these
+        
+    \end{enumerate}
+
+\item $\lim_{n\to \infty}$
+      $\left(
+      \frac{1}{1-n^2} + \frac{2}{1-n^2} +...+ \frac{n}{1-n^2}
+       \right)$ is equal to
+       
+             \hfill(1984 - 2 Marks)
+                 \begin{enumerate}
+                    \item 0
+                    \item -$\frac{1}{2}$
+                    \item $\frac{1}{2}$
+                    \item none of these
+             
+                 \end{enumerate}
+
+\item If f(x)=$\begin{cases}
+    \frac{\sin[x]}{[x]}, [x]\neq 0\\ =0 ,  [x]=0\end{cases}$   where [x] denotes the greatest integer less than or equal to x, then $\lim_{x\to 0}$ equals
+    \hfill                (1985 - 2 Marks)
+    \begin{enumerate}
+        \item 1
+        \item 0
+        \item -1
+        \item none of these
+    \end{enumerate}
+
+\item Let $f$:R $\to$ R be a differentiable function and f(1)=4.Then the value of $\lim_{x\to 1}$\[ \int_{4}^{f(x)}\frac{2t}{x-1}\,dt\]  is
+\hfill(1990 - 2 Marks)
+ \begin{enumerate}
+     \item 8f'(1)
+     \item 4f'(1)
+     \item 2f'(1)
+     \item f"(1)
+     
+     
+ \end{enumerate}
+
+\item Let [.] denote the greatest integer function and f(x)=[$\tan^2{x}$], then
+\hfill(1993 - 1 Mark)
+    \begin{enumerate}
+        \item $\lim_{x\to 0}$ does not exist
+        \item f(x) is continuous at x=0
+        \item f(x) is not differentiable at x=0
+        \item f'(0)=1
+        
+    \end{enumerate}
+
+\item  function f(x)=[x]$\cos{(\frac{2x-1}{2})}\pi$ ,denotes[.] denotes the greatest integer function, is discontinuous at
+\hfill(1995S)
+   \begin{enumerate}
+       \item All x
+       \item All integer points
+       \item No x
+       \item x which is not an integer
+   \end{enumerate}
+
+\item $\lim_{n\to \infty}\frac{1}{n}\sum_{r=1}^{2n}\frac{r}{\sqrt{n^2+r^2}}$ equals
+\hfill(1997 - 2 Marks)
+  \begin{enumerate}
+      \item 1+$\sqrt{5}$
+      \item -1+$\sqrt{5}$
+      \item -1+$\sqrt{2}$
+      \item 1+$\sqrt{2}$
+      
+  \end{enumerate}
+
+\item The function f(x)=$[x]^2$-[$x^2$] (where [y] is the greatest integer less than or equal to y), is discontinuous at
+\hfill(1992 - 2 Marks)
+     \begin{enumerate}
+         \item all integers
+         \item all integers except 0 and 1
+         \item all integers except 0
+         \item all integers except 1
+         
+     \end{enumerate}
+
+\item The function f(x)=($x^2$-1)$\mod{x^2-3x+2}+\cos{\mod{x}}$ is NOT differentiable at
+
+  \hfill(1999 - 2 Marks)
+     \begin{enumerate}
+         \item -1
+         \item 0
+         \item 1
+         \item 2
+         
+     \end{enumerate}
+
+\item $\lim_{x\to0}$$\frac{x\tan(2x)-2x\tan(x)}{(1-\cos(2x))^2}$ is
+  \hfill(1999 - 2 Marks)
+    \begin{enumerate}
+        \item 2
+        
+        \item -2
+
+        \item $\frac{1}{2}$
+        
+        \item $\frac{-1}{2}$
+        
+    \end{enumerate}
+
+\item For x$\in$R, $\lim_{x\to \infty}(\frac{x-3}{x+2})^x$ =
+ \hfill(2000S)
+   \begin{enumerate}
+       \item $e$
+       \item $e^{-1}$
+       \item $e^{-5}$
+       \item $e^{5}$
+       
+   \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
