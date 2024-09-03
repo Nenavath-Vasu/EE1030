@@ -1,9 +1,7 @@
-
-
 % \iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{algorithmic}
@@ -52,7 +50,6 @@
 \author{EE24BTECH11046 - NENAVATH VASU $^{*}$% <-this % stops a space
 }
 \maketitle
-\newpage
 \bigskip
 
 \renewcommand{\thefigure}{\theenumi}
@@ -63,30 +60,30 @@
 
 
 
-\begin{enumerate}[start=2]
+\begin{enumerate}
    
-\item For a real number $y$, let $\sbrak{y}$ denote the greatest integer less thsn or equal to $y$.Then the function{$f\brak{x}=\frac{\tan\pi\sbrak{x-\pi}}{1+[x]^2}$} is
+\item For a real number $y$, let $\sbrak{y}$ denote the greatest integer less than or equal to $y$. Then the function{$f\brak{x}=\frac{\tan\pi\sbrak{x-\pi}}{1+[x]^2}$} is
 
 \hfill                    (1981 - 2 Marks)
    \begin{enumerate}
        \item discontinuous at some $x$
-        \item continuous at all $x$, but the derivative $f'(x)$ does not exist for some $x$
-        \item $f'(x)$ exists for all $x$, but the second derivative $f"(x)$ does not exist for some $x$
-        \item $f'(x)$ exists for all $x$
+        \item continuous at all $x$, but the derivative $f^{\prime}(x)$ does not exist for some $x$
+        \item $f^{\prime}(x)$ exists for all $x$, but the second derivative $f^{\prime}{\prime}(x)$ does not exist for some $x$
+        \item $f^{\prime}(x)$ exists for all $x$
    \end{enumerate}
 
 
 
 
-\item There exists a function $f(x)$,satisfying $f(0)=1,f'(0)=-1,f(x)>0$ for all $x$, and 
+\item There exists a function $f(x)$,satisfying $f(0)=1, f^{\prime}(0)=-1, f(x)>0$ for all $x$, and 
 
 \hfill      (1982 - 2 Marks)
     \begin{enumerate}
 
-          \item $f'(x) > 0$ for all $x$
-          \item$ -1 < f"(x) < 0$ for all $x$
-          \item $-2 \leq f"(x) \leq -1$ for  all 
-          \item $f"(x) < -2$ for all $x$
+          \item $f^{\prime}(x) > 0$ for all $x$
+          \item$ -1 < f^{\prime}{\prime}(x) < 0$ for all $x$
+          \item $-2 \leq f^{\prime}{\prime}(x) \leq -1$ for  all 
+          \item $f^{\prime}{\prime}(x) < -2$ for all $x$
 
           
           
@@ -103,7 +100,7 @@
     
 \end{enumerate}
 
-\item If $f(a)=2,f'(a)=1,g(a)=-1,g'(a)2$, then the value of $\lim_{x\to a}\frac{g(x)f(a)-g(a)f(x)}{x-a}$ is
+\item If $f(a)=2,f^{\prime}(a)=1,g(a)=-1,g^{\prime}(a)=2$, then the value of $\lim_{x\to a}\frac{g(x)f(a)-g(a)f(x)}{x-a}$ is
 
   \hfill (1983 - 1 Mark)
      \begin{enumerate}
@@ -139,7 +136,7 @@
                  \end{enumerate}
 
 \item If $f(x)=\begin{cases}
-    \frac{\sin[x]}{[x]}, [x]\neq 0\\ =0 ,  [x]=0\end{cases}$   where [$x$] denotes the greatest integer less than or equal to $x$, then $\lim_{x\to 0}$ equals
+\frac{\sin\sbrak{x}}{\sbrak{x}}, \sbrak{x}\neq 0\\ 0 ,  \sbrak{x}=0\end{cases}$   where $\sbrak{x}$ denotes the greatest integer less than or equal to $x$, then $\lim_{x\to 0}f(x)$ equals
     \hfill                (1985 - 2 Marks)
     \begin{enumerate}
         \item 1
@@ -148,28 +145,32 @@
         \item none of these
     \end{enumerate}
 
-\item Let $f:R\to R$ be a differentiable function and $f(1)=4$.Then the value of $\lim_{x\to 1}$\[ \int_{4}^{f(x)}\frac{2t}{x-1}\,dt\]  is
+\item Let $f:R\to R$ be a differentiable function and $f(1)=4$.Then the value of
+\begin{align}
+ \: \lim_{x\to 1}\int_{4}^{f(x)}\frac{2t}{x-1}\,dt 
+ \end{align}
+ is
 \hfill(1990 - 2 Marks)
  \begin{enumerate}
-     \item 8$f'(1)$
-     \item $4f'(1)$
-     \item $2f'(1)$
-     \item $f"(1)$
+     \item 8$f^{\prime}(1)$
+     \item $4f^{\prime}(1)$
+     \item $2f^{\prime}(1)$
+     \item $f^{\prime}{\prime}(1)$
      
      
  \end{enumerate}
 
-\item Let [.] denote the greatest integer function and $f(x)=[\tan^2{x}$], then
+\item Let $\sbrak{.}$ denote the greatest integer function and $f(x)=\sbrak{\tan^2{x}}$, then
 \hfill(1993 - 1 Mark)
     \begin{enumerate}
         \item $\lim_{x\to 0}$ does not exist
         \item $f(x)$ is continuous at $x$=0
         \item $f(x)$ is not differentiable at $x$=0
-        \item $f'(0)=1$
+        \item $f^{\prime}(0)=1$
         
     \end{enumerate}
 
-\item The function $f(x)=[x]\cos{\brak{\frac{2x-1}{2}}}\pi$ ,denotes[.] denotes the greatest integer function, is discontinuous at
+\item The function $f(x)=\sbrak{x}\cos{\brak{\frac{2x-1}{2}}}\pi$ , where $\sbrak{x}$ denotes the greatest integer function, is discontinuous at
 \hfill(1995S)
    \begin{enumerate}
        \item All $x$
@@ -188,7 +189,7 @@
       
   \end{enumerate}
 
-\item The function $f(x)=[x]^2$-[$x^2$] (where $[y]$ is the greatest integer less than or equal to $y$), is discontinuous at
+\item The function $f(x)=\sbrak{x}^2$-$\sbrak{x}^2$ (where $\sbrak{y}$ is the greatest integer less than or equal to $y$), is discontinuous at
 \hfill(1992 - 2 Marks)
      \begin{enumerate}
          \item all integers
@@ -235,17 +236,3 @@
 \end{enumerate}
 
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
